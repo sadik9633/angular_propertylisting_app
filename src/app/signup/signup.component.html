@@ -1,0 +1,50 @@
+<body>
+    <div class="container w-50 mt-3 p-3">
+        <div class="row">
+                <div class="card bg-dark text-white">
+                    <div class="text-center p-2 mt-3">
+                        <h2>Create Free Account</h2>
+                    </div>
+                    <hr>
+            <form [formGroup]="signupForm" (ngSubmit)="signUp()"  action="" class="container w-75 text-center">
+                <div class="mb-3 mt-3">
+                    <input formControlName="name" id="si1" name="sn1" type="text" class="form-control"  placeholder="Enter Name" autocomplete="off">
+                    <span *ngIf="this.signupForm.get('name')?.errors && this.signupForm.get('name')?.touched">
+                        <p class="text-danger">accept only letters</p>
+                    </span>
+                 </div>
+                <div class="mb-3 mt-3">
+                 <input formControlName="email" id="si2" name="sn2" type="email" class="form-control"  placeholder="Enter Email id" autocomplete="off">
+                 <span *ngIf="this.signupForm.get('email')?.errors && this.signupForm.get('email')?.touched">
+                    <p class="text-danger">accept only Email</p>
+                </span>
+                </div>
+                <div class="mb-3 mt-3">
+                 
+                  <input formControlName="mobile" id="si3" name="sn3" type="text" class="form-control"  placeholder="Enter Mobile Number" autocomplete="off">
+                  <span *ngIf="this.signupForm.get('mobile')?.errors && this.signupForm.get('mobile')?.touched">
+                    <p class="text-danger">accept only 10 Digit Mobile numbers</p>
+                </span>
+                </div>
+                <div class="mb-3 mt-3">
+                  
+                  <input formControlName="password" id="si4" name="sn4" type="password" class="form-control"   placeholder="Enter password" autocomplete="off">
+                  <span *ngIf="this.signupForm.get('password')?.errors && this.signupForm.get('password')?.touched">
+                    <p class="text-danger">Must be six characters long</p>
+                </span>
+                </div>
+                
+                <div class="text-center mt-3">
+                    <button  type="submit">Signup</button>
+                </div>
+             
+            </form>
+            <div class="card-signup-link">
+                Already Account ? <strong><a href="/login">Login</a></strong>
+            </div>
+    
+        </div>
+    
+    </div>
+    </div>
+</body>

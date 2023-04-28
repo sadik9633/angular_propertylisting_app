@@ -1,0 +1,39 @@
+<body>
+    <div class="container w-50 mt-3 p-3">
+        <div class="row">
+                <div class="card bg-dark text-white">
+                    <div class="text-center p-2 mt-3">
+                        <h2>login to Manage Properties</h2>
+                    </div>
+                    <hr>
+            <form (ngSubmit)="login()" [formGroup]="loginForm" action="" class="container w-75 text-center">
+                <div class="mb-5 mt-4">
+                 
+                  <input  formControlName="email" id="ei1" name="en1" type="email" class="form-control"  placeholder="Enter Email id" autocomplete="off">
+                  <span *ngIf="this.loginForm.get('email')?.errors && this.loginForm.get('email')?.touched">
+                    <p class="text-danger">accept only Email</p>
+                </span>
+                </div>
+               
+                <div class="mb-3 mt-4">
+                  
+                  <input formControlName="password" id="ei2" name="en2" type="password" class="form-control"   placeholder="Enter Password" autocomplete="off">
+                  <span *ngIf="this.loginForm.get('password')?.errors && this.loginForm.get('password')?.touched">
+                    <p class="text-danger">Must be six characters long</p>
+                    </span>
+                </div>
+                
+                <div class="text-center mt-5">
+                    <button  type="submit">Login</button>
+                </div>
+             
+            </form>
+            <div class="card-signup-link">
+                New user ? <strong><a href="/signup">Signup</a></strong>
+            </div>
+    
+        </div>
+    
+    </div>
+    </div>
+</body>

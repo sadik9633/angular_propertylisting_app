@@ -1,0 +1,49 @@
+<body>
+       <div class="container">
+        <div class="heading"><h2 style="text-align: center;">Add New Property</h2></div><hr class="m-4">
+        <form (ngSubmit)="addproperty()" [formGroup]="addPropertiesForm" action="">
+            <div class="card-details">
+                
+                <div class="card-box">
+                    <span class="details">Property Title</span>
+                    <input formControlName="ptitle" type="text" id="pi1" name="pn1" placeholder="Property Title">
+                    <span *ngIf="this.addPropertiesForm.get('ptitle')?.errors && this.addPropertiesForm.get('ptitle')?.touched">
+                        <p class="text-danger">accept only letters and numbers</p>
+                    </span>
+                </div>
+                <div class="card-box">
+                    <span class="details">Property Price</span>
+                    <input formControlName="pprice" type="text" id="pi2" name="pn2" placeholder="Property Price">
+                    <span *ngIf="this.addPropertiesForm.get('pprice')?.errors && this.addPropertiesForm.get('pprice')?.touched">
+                        <p class="text-danger">accept only numbers</p>
+                    </span>
+                </div>
+                <div class="card-box">
+                    <span class="details">Property Location</span>
+                    <input formControlName="plocation" type="text" id="pi3" name="pn3" placeholder="Property Location">
+                    <span *ngIf="this.addPropertiesForm.get('plocation')?.errors && this.addPropertiesForm.get('plocation')?.touched">
+                        <p class="text-danger">accept only letters and numbers</p>
+                    </span>
+                </div>
+                <div class="card-box">
+                    <span class="details">Property Details</span>
+                    <input formControlName="pdetails" type="text" id="pi4" name="pn4" placeholder="Property Details">
+                    <span *ngIf="this.addPropertiesForm.get('pdetails')?.errors && this.addPropertiesForm.get('pdetails')?.touched">
+                        <p class="text-danger">accept only letters and numbers</p>
+                    </span>
+                </div>
+                <div class="card-box">
+                    <span class="details">Contact Number</span>
+                    <input formControlName="cnumber" type="text" id="pi5" name="pn5" placeholder="Property Contact Number">
+                    <span *ngIf="this.addPropertiesForm.get('cnumber')?.errors && this.addPropertiesForm.get('cnumber')?.touched">
+                        <p class="text-danger">accept only 10 Digit Mobile numbers</p>
+                    </span>
+                </div>
+            </div>
+            <div class="button"><button type="submit">Add Listing</button></div>
+        </form>  
+       </div>
+
+   </body> 
+
+

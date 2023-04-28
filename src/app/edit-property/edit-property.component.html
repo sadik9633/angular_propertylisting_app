@@ -1,0 +1,38 @@
+<body>
+    <div class="container">
+     <div class="heading"><h2 style="text-align: center;">Update Property</h2></div><hr class="m-4">
+     <form (ngSubmit)="updateProperty(updatePropertyForm)" #updatePropertyForm="ngForm" action="">
+         <div class="card-details">
+             <div class="card-box">
+                 <span class="details">Property Id</span>
+                 <input [(ngModel)]="pData.id" type="text" id="pi" name="pn"placeholder="Property Id">
+             </div>
+             <div class="card-box">
+                 <span class="details">Property Title</span>
+                 <input [(ngModel)]="pData.ptitle"  type="text" id="pi1" name="pn1" placeholder="Property Id">
+             </div>
+             <div class="card-box">
+                 <span class="details">Property Price</span>
+                 <input [(ngModel)]="pData.pprice"  type="text" id="pi2" name="pn2" placeholder="Property Id">
+             </div>
+             <div class="card-box">
+                 <span class="details">Property Location</span>
+                 <input [(ngModel)]="pData.plocation"  type="text" id="pi3" name="pn3" placeholder="Property Id">
+             </div>
+             <div class="card-box">
+                 <span class="details">Property Details</span>
+                 <input [(ngModel)]="pData.pdetails"  type="text" id="pi4" name="pn4" placeholder="Property Id">
+             </div>
+             <div class="card-box">
+                 <span class="details">Contact Number</span>
+                 <input
+                 [(ngModel)]="pData.cnumber"  type="text" id="pi5" name="pn5" placeholder="Property Id">
+             </div>
+         </div>
+         <div class="button"><button type="submit">Add Listing</button></div>
+     </form>  
+    </div>
+
+</body> 
+
+

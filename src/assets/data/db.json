@@ -1,0 +1,89 @@
+{
+  "properties": [
+    {
+      "id": 1,
+      "ptitle": "2e23jijg",
+      "pprice": "kniuhvui",
+      "plocation": "jbubu",
+      "pdetails": "nfjnbif",
+      "cnumber": "fnhfu34h"
+    },
+    {
+      "id": 2,
+      "ptitle": "jfhu4h",
+      "pprice": "jfih4uh4",
+      "plocation": "jrni4h8",
+      "pdetails": "niu",
+      "cnumber": ""
+    },
+    {
+      "ptitle": "sadik",
+      "pprice": "18888",
+      "plocation": "kongittz",
+      "pdetails": "2 bhk",
+      "cnumber": "9866446877",
+      "id": 3
+    },
+    {
+      "ptitle": "asdf",
+      "pprice": "123",
+      "plocation": "dftdr4",
+      "pdetails": "ztftrserst",
+      "cnumber": "8765434567",
+      "id": 6
+    },
+    {
+      "ptitle": "fddgf",
+      "pprice": "2345",
+      "plocation": "jhfg",
+      "pdetails": "jkhgfx",
+      "cnumber": "1234567890",
+      "id": 7
+    },
+    {
+      "ptitle": "dfgg",
+      "pprice": "12222",
+      "plocation": "asdf",
+      "pdetails": "hggasdfg",
+      "cnumber": "9876542311",
+      "id": 8
+    }
+  ],
+  "signupUsers": [
+    {
+      "name": "sadik",
+      "email": "sadikali@gmail.com",
+      "mobile": "9876543234",
+      "password": "abc123",
+      "id": 1
+    },
+    {
+      "name": "weefef",
+      "email": "sadikali@gmail.com",
+      "mobile": "8765567651",
+      "password": "abc123",
+      "id": 2
+    },
+    {
+      "name": "sadik",
+      "email": "sadik@gmail.com",
+      "mobile": "9876543265",
+      "password": "abc123",
+      "id": 3
+    },
+    {
+      "name": "sadik",
+      "email": "sadik@gmail.com",
+      "mobile": "9876543211",
+      "password": "abc123",
+      "id": 4
+    },
+    {
+      "name": "sadik",
+      "email": "sadik@gmail.com",
+      "mobile": "0987654321",
+      "password": "abc123",
+      "id": 5
+    }
+  ]
+}
